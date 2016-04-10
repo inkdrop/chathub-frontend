@@ -1,11 +1,11 @@
 # Instalação #
 Siga essas instruções pra deixar seu ambiente de desenvolvimento supimpa
 
-## Requisitos
+## Requisitos ##
 - Ruby
 - Node
 
-## Mão na massa
+## Mão na massa ##
 A partir do diretório raíz da aplicação execute:
 - ```$ gem install sass```
 - ```$ npm install```
