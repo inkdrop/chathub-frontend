@@ -29,6 +29,6 @@ e cada uma delas deve representar um estado diferente do mesmo componente. Por e
 - Crie um novo componente no dir ```components``` (ex ```Botao.js```)
 - Crie uma ```story``` para esse componente (mesmo nome, mas com letra minúscula, ex ```botao.js```)
 no dir ```stories``` que fica dentro de ```components```
-- Declare essa nova ```story``` na configuração do ```Storybook``` (```.storybook/config.js```)
+- Declare essa nova ```story``` na configuração do ```Storybook``` em ```.storybook/config.js```
 - Para rodar o Storybook execute ```$ npm run storybook```
 - Agora é só fritar codando seus componentes enquanto o Storybook atualiza tudo automaticamente p vc.
