@@ -1,0 +1,47 @@
+import React from 'react'
+import Card from '../Card'
+import { storiesOf, action } from '@kadira/storybook'
+
+const styles = {
+    container: {
+        height: 'auto',
+        display: 'block',
+        marginTop: '30px'
+    },
+    cardWrapper: {
+        width: '220px',
+        margin: '0 auto'
+    },
+    imgStyle: {
+        height: '120px'
+    }
+}
+
+storiesOf('Card', module)
+    .add('no content', () => {
+        return (
+            <div style={styles.container}>
+                <div style={styles.cardWrapper}>
+                    <Card />
+                </div>
+            </div>
+        )
+
+    })
+    .add('with content', () => {
+        const header = (
+            <img src="http://megaicons.net/static/img/icons_sizes/8/178/512/logos-github-icon.png" style={styles.imgStyle} />
+        )
+        const conteudo = (
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas ullamcorper efficitur. Proin id risus mattis, lobortis arcu eu, fringilla mauris. Aasasd asdasd asdasd asdasda asdasd</div>
+        )
+
+        return (
+            <div style={styles.container}>
+                <div style={styles.cardWrapper}>
+                    <Card header={header} content={conteudo} />
+                </div>
+            </div>
+        )
+
+    })
