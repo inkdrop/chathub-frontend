@@ -26,7 +26,7 @@ e cada uma delas deve representar um estado diferente do mesmo componente. Por e
 [Estado 2](http://i.imgur.com/lrWGcIH.png)
 
 ## Como usar
-- Crie um novo componente no dir ```components``` (ex ```Botao.js```)
+- Crie um novo componente no dir ```components``` (ex ```Button.js```)
 - Crie uma ```story``` para esse componente (mesmo nome, mas com letra minúscula, ex ```botao.js```)
 no dir ```stories``` que fica dentro de ```components```
 - Declare essa nova ```story``` na configuração do ```Storybook``` em ```.storybook/config.js```
