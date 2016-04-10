@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from '../Card'
+import {BLURRY_BEACH} from '../../constants/gradientClasses'
 import { storiesOf, action } from '@kadira/storybook'
 
 const styles = {
@@ -39,7 +40,7 @@ storiesOf('Card', module)
         return (
             <div style={styles.container}>
                 <div style={styles.cardWrapper}>
-                    <Card header={header} content={conteudo} />
+                    <Card header={header} content={conteudo} gradient={BLURRY_BEACH} />
                 </div>
             </div>
         )
