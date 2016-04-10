@@ -6,7 +6,7 @@ Siga essas instruções pra deixar seu ambiente de desenvolvimento supimpa
 - Node
 
 ## Mão na massa ##
-A partir do diretório raíz da aplicação execute:
+- A partir do diretório raíz da aplicação execute:
 - ```$ gem install sass```
 - ```$ npm install```
 - ```$ npm install webpack -g```
