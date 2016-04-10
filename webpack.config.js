@@ -5,7 +5,7 @@ module.exports = {
     entry: [
         'webpack-dev-server/client?http://localhost:8080',
         'webpack/hot/only-dev-server',
-        './src/js/application.jsx'
+        './src/js/application'
     ],
 
     stats: {
@@ -26,7 +26,7 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /\.jsx?$/,
+                test: /\.js$/,
                 exclude: /node_modules/,
                 loaders: ['react-hot', 'babel?presets[]=es2015&presets[]=react']
             }
