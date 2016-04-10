@@ -21,10 +21,8 @@ O Storybook é uma ferramenta usada para desenvolver componentes de uma forma is
 independente da aplicação utilizando ```stories```. Um componente pode ter várias ```stories```
 e cada uma delas deve representar um estado diferente do mesmo componente. Por exemplo:
 
-**Estado 1**
 ![Estado 1](http://i.imgur.com/uvJlF94.png "Estado 1")
 
-**Estado 2**
 ![Estado 2](http://i.imgur.com/lrWGcIH.png "Estado 2")
 
 ## Como usar
