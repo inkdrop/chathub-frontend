@@ -1,0 +1,37 @@
+.ch-card {
+  width: inherit;
+  height: inherit;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
+
+.ch-card-header {
+  width: inherit;
+  min-height: 130px;
+  display: block;
+  padding: 0;
+  text-align: center;
+}
+
+.ch-card-header-content {
+  display: block;
+  padding: 10px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.ch-card-body {
+  width: inherit;
+  background-color: #ffffff;
+  text-align: center;
+  display: block;
+  padding: 0;
+  min-height: 170px;
+}
+
+.ch-card-body-content {
+  display: block;
+  padding: 10px;
+  font-family: Ubuntu, Verdana, monospace;
+  letter-spacing: 1px;
+  color: #333;
+}
