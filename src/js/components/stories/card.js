@@ -11,7 +11,7 @@ const styles = {
     },
     cardWrapper: {
         width: '220px',
-        margin: '0 auto'
+        margin: '0 30px'
     },
     imgStyle: {
         height: '120px'

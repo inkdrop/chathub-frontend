@@ -21,6 +21,12 @@ O Storybook é uma ferramenta usada para desenvolver componentes de uma forma is
 independente da aplicação utilizando ```stories```. Um componente pode ter várias ```stories```
 e cada uma delas deve representar um estado diferente do mesmo componente.
 
+**Estado 1**
+[imagem](http://i.imgur.com/uvJlF94.png)
+
+**Estado 2**
+[imagem](http://i.imgur.com/lrWGcIH.png)
+
 ## Como usar
 - Crie um novo componente no dir ```components``` (ex ```Botao.js```)
 - Crie uma ```story``` para esse componente (mesmo nome, mas com letra minúscula, ex ```botao.js```)
