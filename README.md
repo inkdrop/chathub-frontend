@@ -1,5 +1,5 @@
 # Instalação #
-Siga essas instruções pra deixar seu ambiente de desenvolvimento sumpimpa
+Siga essas instruções pra deixar seu ambiente de desenvolvimento supimpa
 
 ## Requisitos
 - Ruby
