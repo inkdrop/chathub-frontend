@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:sass": "sass --watch src/sass/main.scss:dist/application.css",
     "dev:server": "webpack-dev-server --progress --colors",
-    "dev": "node_modules/concurrently/src/main.js \"npm run watch:sass\" \"npm run dev:server\"",
+    "fonts:dist": "node_modules/ncp/bin/ncp \"fonts\" \"dist/fonts\"",
+    "dev": "npm run fonts:dist && node_modules/concurrently/src/main.js \"npm run watch:sass\" \"npm run dev:server\"",
     "storybook": "node_modules/concurrently/src/main.js \"npm run watch:sass\" \"start-storybook -p 9001\""
   },
   "author": "Jon Welzel",
