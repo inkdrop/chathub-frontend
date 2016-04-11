@@ -9,14 +9,15 @@ storiesOf('Button', module)
             <Button label="Button" />
         )
     })
-    .add('white', () => {
+    .add('white with icon', () => {
         const style = {
-            backgroundColor: '#333',
+            backgroundColor: '#00D081',
             padding: '10px'
         }
+        const icon = <i className="icon-github-alt" />
         return (
             <div style={style}>
-                <Button className="ch-btn-white" label="Button" />
+                <Button icon={icon} className="ch-btn-white" label="Button" />
             </div>
         )
     })

@@ -6,7 +6,7 @@ class Button extends React.Component {
     render(){
         return (
             <button className={'ch-btn ' + this.props.className}>
-                <i className="icon-github-square"></i>{this.props.label}
+                {this.props.icon} {this.props.label}
             </button>
         )
     }
