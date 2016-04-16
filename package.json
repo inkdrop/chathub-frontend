@@ -4,27 +4,38 @@
   "description": "Frontend application for the Chathub service",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node_modules/mocha/bin/mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive",
+    "test:watch": "npm run test -- --watch",
     "watch:sass": "sass --watch src/sass/main.scss:dist/application.css",
     "dev:server": "webpack-dev-server --progress --colors",
     "fonts:dist": "node_modules/ncp/bin/ncp \"fonts\" \"dist/fonts\"",
     "dev": "npm run fonts:dist && node_modules/concurrently/src/main.js \"npm run watch:sass\" \"npm run dev:server\"",
     "storybook": "npm run fonts:dist && node_modules/concurrently/src/main.js \"npm run watch:sass\" \"start-storybook -p 9001 -s ./dist\""
   },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
   "author": "Jon Welzel",
   "license": "ISC",
   "dependencies": {
     "classnames": "^2.2.3",
+    "immutable": "^3.8.0",
     "react": "^15.0.1",
     "react-dom": "^15.0.1"
   },
   "devDependencies": {
     "@kadira/storybook": "^1.8.0",
+    "babel-cli": "^6.7.5",
     "babel-core": "^6.7.6",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.6.0",
     "babel-preset-react": "^6.5.0",
+    "chai": "^3.5.0",
+    "chai-immutable": "^1.5.4",
     "concurrently": "^2.0.0",
+    "mocha": "^2.4.5",
     "ncp": "^2.0.0",
     "raw-loader": "^0.5.1",
     "react-hot-loader": "^1.3.0",
