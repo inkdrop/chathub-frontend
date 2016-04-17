@@ -1,5 +1,5 @@
 import React from 'react'
-import {SHORE} from '../constants/gradientClasses'
+import {SHORE} from '../constants/gradient_classes'
 
 
 class Card extends React.Component {

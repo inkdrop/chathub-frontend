@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from '../Card'
-import {BLURRY_BEACH} from '../../constants/gradientClasses'
+import {BLURRY_BEACH} from '../../constants/gradient_classes'
 import { storiesOf, action } from '@kadira/storybook'
 
 const styles = {
