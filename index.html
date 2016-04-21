@@ -2,14 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chathub</title>
     <link rel="stylesheet" href="dist/application.css">
 </head>
 <body>
 
-    <div class="columns">
-        <div class="column is-one-quarter" id="card-container" style="width: 200px"></div>
-        <div class="column " id="btn-container" style="margin-top: 30px;"></div>
+    <div class="ch-gradient-back-to-earth">
+        <header class="header chathub-header">
+            <div class="container">
+                <div class="header-left">
+                    <a class="header-item" href="/">
+                        <i class="icon-home"></i>
+                    </a>
+                    <a class="header-tab" href="#">about us</a>
+                    <a class="header-tab" href="#">privacy</a>
+                    <a class="header-tab" href="#">contact</a>
+                </div>
+
+                <div class="header-right header-menu">
+                    <span class="header-item" id="Button-get-started"></span>
+                </div>
+            </div>
+        </header>
+        <div class="chathub-header">
+            <div class="container is-clearfix padding-left-right">
+                <span class="logo-wrapper">
+                    <span class="chathub-logo sombra-texto">Chathub</span>
+                </span>
+                <span class="chathub-call-to-action sombra-texto">Simple Github-centric messaging platform and API for humans</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container is-clearfix padding-left-right">
+        <span class="intro-message">a fresh new way for you to keep in touch with your github teams</span>
+
+        <span class="cards-wrapper columns">
+            <div class="column" id="Card-1"></div>
+            <div class="column" id="Card-2"></div>
+            <div class="column" id="Card-3"></div>
+        </span>
     </div>
 
     <script src="dist/bundle.js"></script>
