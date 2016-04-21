@@ -10,7 +10,7 @@ const styles = {
         marginTop: '30px'
     },
     cardWrapper: {
-        width: '220px',
+        width: '15%',
         margin: '0 30px'
     },
     imgStyle: {
