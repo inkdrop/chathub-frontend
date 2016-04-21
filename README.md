@@ -15,3 +15,6 @@ Siga essas instruções pra deixar seu ambiente de desenvolvimento supimpa.
 - Acesse ```http://localhost:8080/webpack-dev-server/``` e seje feliz!
 
 Agora é só fritar!
+
+## Outros links marotos
+- [Como usar o Storybook para criar componentes](https://github.com/inkdrop/chathub-frontend/wiki/React-Storybook)
