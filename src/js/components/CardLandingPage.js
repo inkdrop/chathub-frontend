@@ -2,28 +2,26 @@ import React from 'react'
 import Card from './Card'
 
 
-class CardSignUp extends React.Component {
+class CardLandingPage extends React.Component {
 
     render(){
         const headerContent = ''
         const bodyContent = this._getBodyContent()
 
         return (
-            <Card header={headerContent} content={bodyContent} />
+            <Card header={headerContent} content={bodyContent} gradient={this.props.gradient} />
         )
     }
 
     _getBodyContent(){
-        const text = 'Sign up with your Github account'
-
         return (
             <div className="card-body-wrapper">
-                <div className="card-number">1</div>
-                <div>{text}</div>
+                <div className="card-number">{this.props.number}</div>
+                <div>{this.props.text}</div>
             </div>
         )
     }
 
 }
 
-export default CardSignUp
+export default CardLandingPage
