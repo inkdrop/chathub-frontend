@@ -52,11 +52,17 @@
   margin-top: 100px;
 }
 
+.cards-wrapper {
+  margin-top: 100px;
+}
+
 .card-body-wrapper {
   text-transform: uppercase;
   font-family: "League Gothic", "Helvetica Neue", "Helvetica", sans-serif;
+  color: $text;
+  font-size: 1.8em;
 }
 
 .card-number {
-  font-size: 1.8em;
+  font-size: 2em;
 }
