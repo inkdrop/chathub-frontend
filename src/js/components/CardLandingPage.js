@@ -5,7 +5,7 @@ import Card from './Card'
 class CardLandingPage extends React.Component {
 
     render(){
-        const headerContent = ''
+        const headerContent = this._getHeaderContent()
         const bodyContent = this._getBodyContent()
 
         return (
@@ -19,6 +19,12 @@ class CardLandingPage extends React.Component {
                 <div className="card-number">{this.props.number}</div>
                 <div>{this.props.text}</div>
             </div>
+        )
+    }
+
+    _getHeaderContent(){
+        return (
+            <i className={this.props.icon + ' ch-header-icon sombra-texto'}></i>
         )
     }
 
