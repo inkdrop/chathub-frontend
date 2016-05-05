@@ -8,7 +8,7 @@
     "test:watch": "npm run test -- --watch",
     "watch:sass": "sass --watch src/sass/main.scss:dist/application.css --style compressed",
     "dev:server": "webpack-dev-server --progress --colors",
-    "fonts:dist": "node_modules/ncp/bin/ncp \"fonts\" \"dist/fonts\"",
+    "fonts:dist": "node_modules/mkdirp/bin/cmd.js mkdirp 'dist/fonts' && node_modules/ncp/bin/ncp \"fonts\" \"dist/fonts\"",
     "dev": "npm run fonts:dist && node_modules/concurrently/src/main.js \"npm run watch:sass\" \"npm run dev:server\"",
     "storybook": "npm run fonts:dist && node_modules/concurrently/src/main.js \"npm run watch:sass\" \"start-storybook -p 9001 -s ./dist\""
   },
@@ -38,6 +38,7 @@
     "chai-immutable": "^1.5.4",
     "concurrently": "^2.0.0",
     "jsdom": "^8.4.0",
+    "mkdirp": "^0.5.1",
     "mocha": "^2.4.5",
     "ncp": "^2.0.0",
     "raw-loader": "^0.5.1",
