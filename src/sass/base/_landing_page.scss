@@ -92,6 +92,12 @@
   text-align: center;
 }
 
+.macbook-wrapper img {
+  @media #{$desktop-media} {
+    max-width: 80%;
+  }
+}
+
 .get-started-bottom {
   margin-top: 100px;
   text-align: center;
@@ -100,7 +106,7 @@
 .landing-footer {
   background-color: $grey-darker;
   color: $grey-lighter;
-  @media screen and (min-width: $desktop) {
+  @media #{$desktop-media} {
     line-height: 40px;
   }
 }
@@ -125,31 +131,31 @@
 }
 
 .footer-links {
-  @media screen and (max-width: $tablet) {
+  @media #{$tablet-media} {
     text-align: center;
   }
-  @media screen and (min-width: $desktop) {
+  @media #{$desktop-media} {
     text-align: left;
   }
 }
 
 .footer-links li:hover {
-  @media screen and (min-width: $desktop) {
+  @media #{$desktop-media} {
     border-bottom: 1px solid $grey-lighter;
   }
 }
 
 .app-name-bottom {
-  @media screen and (max-width: $tablet) {
+  @media #{$tablet-media} {
     display: none;
   }
 }
 
 .social-links {
-  @media screen and (max-width: $tablet) {
+  @media #{$tablet-media} {
     text-align: center;
   }
-  @media screen and (min-width: $desktop) {
+  @media #{$desktop-media} {
     text-align: right;
   }
 }
