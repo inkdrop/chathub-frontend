@@ -89,10 +89,71 @@
 .macbook-wrapper {
   margin-top: 100px;
   width: 100%;
-  height: 500px;
   text-align: center;
 }
 
-.macbook-pro {
-  height: inherit;
+.get-started-bottom {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.landing-footer {
+  background-color: $grey-darker;
+  color: $grey-lighter;
+  @media screen and (min-width: $desktop) {
+    line-height: 40px;
+  }
+}
+
+.landing-footer li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.landing-footer li a {
+  color: $grey-lighter;
+}
+
+.app-name-bottom {
+  text-align: center;
+}
+
+.app-name {
+  border: 1px solid $grey-lighter;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+.footer-links {
+  @media screen and (max-width: $tablet) {
+    text-align: center;
+  }
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
+}
+
+.footer-links li:hover {
+  @media screen and (min-width: $desktop) {
+    border-bottom: 1px solid $grey-lighter;
+  }
+}
+
+.app-name-bottom {
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.social-links {
+  @media screen and (max-width: $tablet) {
+    text-align: center;
+  }
+  @media screen and (min-width: $desktop) {
+    text-align: right;
+  }
+}
+
+.social-links i {
+  font-size: 40px;
 }
