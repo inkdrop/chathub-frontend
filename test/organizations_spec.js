@@ -6,17 +6,17 @@ import {setOrganizations} from '../src/js/core/organizations'
 
 describe('organizations logic', () => {
 
-    describe('setOrganizations', () => {
+  describe('setOrganizations', () => {
 
-        it('add the organizations to the state', () => {
-            const state = Map()
-            const organizations = List.of('Inkdrop Labs', 'Meus Pedidos')
-            const nextState = setOrganizations(state, organizations)
+    it('add the organizations to the state', () => {
+      const state = Map()
+      const organizations = List.of('Inkdrop Labs', 'Meus Pedidos')
+      const nextState = setOrganizations(state, organizations)
 
-            expect(nextState).to.equal(fromJS({
-                selectedOrganization: 'Inkdrop Labs',
-                organizations: ['Meus Pedidos']
-            }))
-        })
+      expect(nextState).to.equal(fromJS({
+        selectedOrganization: 'Inkdrop Labs',
+        organizations: ['Meus Pedidos']
+      }))
     })
+  })
 })
