@@ -6,7 +6,7 @@ import {BLURRY_BEACH, DRACULA} from './constants/gradient_classes'
 
 
 const iconGithub = <i className="icon-github-alt" />
-ReactDom.render(<Button label="get started" className="ch-btn-white" icon={iconGithub}/>, document.getElementById('Button-get-started'))
+ReactDom.render(<Button label="get started" className="ch-btn white" icon={iconGithub}/>, document.getElementById('Button-get-started'))
 ReactDom.render(<Button label="get started" className="ch-btn" icon={iconGithub}/>, document.getElementById('Button-get-started-bottom'))
 
 const card1Text = 'Sign up with your Github account'
