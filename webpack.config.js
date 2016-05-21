@@ -3,13 +3,25 @@ var path = require('path')
 
 module.exports = {
   entry: {
-    application: ['webpack-dev-server/client?http://localhost:8080', 'webpack/hot/only-dev-server', './src/js/application'],
-    index: ['./src/js/index']
+    bundle: ['webpack-dev-server/client?http://localhost:8080', 'webpack/hot/only-dev-server', './src/js/scenes/index']
   },
 
   stats: {
     colors: true,
     reasons: true
+  },
+
+  resolve: {
+    root: path.resolve(__dirname),
+    alias: {
+      componentsRoot: 'src/js/components',
+      constants: 'src/js/constants',
+      core: 'src/js/core',
+      scenes: 'src/js/scenes',
+      images: 'img',
+      test: 'test'
+    },
+    extensions: ['', '.js', '.jsx']
   },
 
   output: {
@@ -30,10 +42,17 @@ module.exports = {
   ],
 
   module: {
-    loaders: [{
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loaders: ['react-hot', 'babel?presets[]=es2015&presets[]=react']
-    }]
+    loaders: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        loaders: ['react-hot', 'babel?presets[]=es2015&presets[]=react']
+      },
+      {
+        test: /\.(png|jpg)$/,
+        exclude: /node_modules/,
+        loader: 'url-loader?limit=8192' // inline base64 URLs for <=8k images, direct URLs for the rest
+      }
+    ]
   }
 }

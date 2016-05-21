@@ -1,20 +1,20 @@
 import React from 'react'
-import Card from './Card'
+import Card from 'componentsRoot/Card'
 
 
-class CardLandingPage extends React.Component {
+class CardHome extends React.Component {
 
   render(){
     const headerContent = this._getHeaderContent()
     const bodyContent = this._getBodyContent()
 
-    return (
+    return(
       <Card header={headerContent} content={bodyContent} gradient={this.props.gradient} />
     )
   }
 
   _getBodyContent(){
-    return (
+    return(
       <div className="card-body-wrapper">
         <div className="card-number">{this.props.number}</div>
         <div>{this.props.text}</div>
@@ -23,11 +23,11 @@ class CardLandingPage extends React.Component {
   }
 
   _getHeaderContent(){
-    return (
+    return(
       <i className={this.props.icon + ' ch-header-icon sombra-texto'}></i>
     )
   }
 
 }
 
-export default CardLandingPage
+export default CardHome

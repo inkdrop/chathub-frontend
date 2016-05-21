@@ -4,7 +4,7 @@ import React from 'react'
 class Button extends React.Component {
 
   render(){
-    return (
+    return(
       <button className={'ch-btn ' + this.props.className}>
         {this.props.icon} {this.props.label}
       </button>

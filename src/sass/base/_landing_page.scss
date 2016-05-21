@@ -115,6 +115,11 @@
 .landing-footer li {
   display: inline-block;
   text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.landing-footer li:last-child {
+  margin-right: 0;
 }
 
 .landing-footer li a {

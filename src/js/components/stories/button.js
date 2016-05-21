@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../Button'
+import Button from 'components/Button'
 import { storiesOf } from '@kadira/storybook'
 
 
@@ -17,7 +17,7 @@ storiesOf('Button', module)
     const icon = <i className="icon-github-alt" />
     return (
       <div style={style}>
-        <Button icon={icon} className="ch-btn white" label="Button" />
+        <Button icon={icon} className="white" label="Button" />
       </div>
     )
   })
