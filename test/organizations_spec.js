@@ -23,8 +23,12 @@ describe('Organizations core module', () => {
       expect(nextState.get('selectedOrganization')).to.equal(organizationsServerData[0])
     })
 
-    it('should add an empty list to the state if there are no organizations', () => {
-      const organizations = List.of()
+    it('should add an empty list to the state and selected organization should be null if there are no organizations', () => {
+      const organizations = List([])
+      const nextState = setOrganizations(state, organizations)
+
+      expect(nextState.get('organizations')).to.equal(List([]))
+      expect(nextState.get('selectedOrganization')).to.be.null
     })
   })
 })
